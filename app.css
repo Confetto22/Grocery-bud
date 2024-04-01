@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    display: flex;
+    
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+    margin-top: 6rem;
+    background-color: #ccc;
+    padding: 2rem;
+    /* padding-bottom: 5rem; */
+    padding-top: 0rem;
+    border-radius: 0.2rem;
+    box-shadow: 0px 1px 6px 0px black;
+    position: relative;
+}
+
+.cart{
+    position: relative;
+    font-size: 2rem;
+    color: rgb(98, 153, 226);
+}
+.count{
+    position: absolute;
+    background-color: red;
+    /* padding: 0.5rem; */
+    font-size: 13px;
+    /* padding: 0 0.2rem; */
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+
+.cart_track{
+    width: 70px;
+    /* text-align: center; */
+    background-color: rgba(255, 255, 0, 0.479);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+        
+}
+
+/* .cart_track{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.
+.count{
+    position: relative;
+}
+.cart{
+    
+    font-size: 2rem;
+    color: rgb(39, 67, 104);
+} */
+
+.prompts{
+    position: relative;
+    margin: 3rem 0;
+}
+.prompts p{
+position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.promptsheader{
+    display: flex;
+    flex-direction: column;
+}
+@keyframes prompt{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.animate_prompt{
+    animation: prompt 3s ease forwards;
+        animation-play-state: running;
+}
+.empty_text{
+    background-color: rgb(238, 188, 188);
+    color: rgb(158, 5, 5);
+    text-align: center;
+    border-radius: 0.2rem;
+    padding: 0.3rem ;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    opacity: 0;
+   
+    
+   
+    
+}
+.adding_text{
+    background-color: rgb(188, 238, 213);
+        color: rgb(15, 173, 107);
+        text-align: center;
+        border-radius: 0.2rem;
+        padding: 0.3rem ;
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        opacity: 0;
+       
+  
+        
+}
+.adding_prompt{
+    animation: prompt 3s ease forwards;
+    animation-play-state: running;
+}
+
+.remove_text{
+    background-color: rgb(180, 175, 243);
+        color: rgb(35, 20, 175);
+        text-align: center;
+        border-radius: 0.2rem;
+        padding: 0.3rem;
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        opacity: 0;
+       
+}
+.remove_prompt{
+    animation: prompt 3s ease forwards;
+        animation-play-state: running;
+}
+.container h1{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 0rem;
+    
+}
+.title_underline{
+    height: 0.3rem;
+    border-radius: 0.7rem;
+    border: none;
+    background-color: gold;
+    width: 70%;
+    margin-top: 0;
+}
+.input_container{
+    /* width: 80%; */
+    /* margin: auto;
+    display: block; */
+    justify-content: center;
+    display: flex;
+    gap: 0;
+    margin-top: 2rem;
+}
+.inputfield{
+    background-color: #e5eef5;
+    border: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding-left: 1rem;
+   height: 1.6rem;
+   width: 70%;
+}
+
+.submit_bt{
+    padding: 0.3rem 1rem;
+    border: none;
+    background-color: #a5d5f8;
+    border-radius: 0 0.5rem 0.5rem 0;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s ease;
+}
+.submit_bt:disabled{
+    cursor: not-allowed;
+    background-color: grey;
+    opacity: 0.6;
+    color: #1010104d;
+}
+.submit_bt:disabled:hover{
+    background-color: grey;
+    
+    color: #1010104d;
+}
+.submit_bt:hover{
+    background-color: #1881cc;
+    color: white;
+    
+}
+
+.grocery_list{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.grocery_item{
+    list-style-type: none;
+    background-color: whitesmoke;
+    
+    padding: 0.2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.actual_text{
+    color: rgb(108, 182, 182);
+}
+
+.list_controls{
+    display: flex;
+    gap: 1px;
+}
+.edit{
+    color: #6be675;
+    transition: 0.3s ease;
+}
+.edit:hover{
+    color: hsl(125, 67%, 44%);
+}
+.delete{
+    color: #e66b6b;
+    transition: 0.3s ease;
+}
+.delete:hover{
+    color: hsl(360, 67%, 44%);
+}
+.done{
+    color: #0bc5c5;
+    transition: 0.3s ease;
+}
+.done:hover{
+    color: #097777;
+}
+.text_done{
+    color: grey;
+    text-decoration: line-through;
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+.clear{
+    /* width: 80%; */
+    display: block;
+    margin: auto;
+    padding: 0.5rem 0.4rem;
+    color: red;
+        /* color: rgb(158, 5, 5); */
+        border: none;
+        transition: 0.3s ease;
+        background-color: transparent;
+        cursor: pointer;
+        margin-top: 2rem;
+        letter-spacing: 2px;
+        border-radius: 0.4rem;
+}
+.clear:hover{
+background-color: red;
+color: white;
+
+}

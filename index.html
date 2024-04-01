@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery bud</title>
+    <link rel="stylesheet" href="app.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cart_track">
+        <i class="bx bxs-cart cart"></i>
+        <span class="count"></span>
+      </div>
+
+      <div class="promptsheader">
+        <div class="prompts">
+          <p class="empty_text">Please Enter Value!</p>
+          <p class="adding_text">Item Added!</p>
+          <p class="remove_text">Item Removed!</p>
+        </div>
+        <div class="heading_n_underline">
+          <h1>Grocery Bud</h1>
+          <hr class="title_underline" />
+        </div>
+      </div>
+      <div class="input_container">
+        <input type="text" class="inputfield" placeholder="e.g. eggs" />
+        <button class="submit_bt">Submit</button>
+      </div>
+
+      <ul class="grocery_list">
+        <!-- <li class="grocery_item">
+          <p class="actual_text">Eggs</p>
+          <span class="list_controls">
+            <i class="bx bxs-edit edit"></i>
+            <i class="bx bxs-trash-alt delete"></i>
+            <i class="bx bxs-check-square done"></i>
+          </span>
+        </li> -->
+      </ul>
+      <button class="clear">Clear Items</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
